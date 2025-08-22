@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday!</title>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+ <audio id="birthdaySong" autoplay loop>
+  <source src="assets/birthday-song.mp3" type="audio/mpeg/mp3" />
+  Your browser does not support the audio element.
+</audio>
+
+  <div class="container">
+    <!-- Page 1: Welcome -->
+    <section class="page active" id="welcome">
+      
+      <h1>Happy Birthday</h1>
+      <p> TOO MY BEST FRIEND</p>
+      <button onclick="nextPage()">Celebrate!</button>
+    </section>
+
+    <!-- Page 2: Gallery -->
+    <section class="page" id="gallery">
+      <h2>Just a album</h2>
+      <div class="tree">
+        <div class="branch">
+          <img src="assets/images/photo1.jpg" alt="Memory 1" class="bloom" />
+          <img src="assets/images/photo2.jpg" alt="Memory 2" class="bloom" />
+        </div>
+        <div class="branch">
+          <img src="assets/images/photo3.jpg" alt="Memory 3" class="bloom" />
+          <img src="assets/images/photo4.jpg" alt="Memory 4" class="bloom" />
+        </div>
+        <div class="branch">
+          <img src="assets/images/photo5.jpg" alt="Memory 5" class="bloom" />
+          <img src="assets/images/photo6.jpg" alt="Memory 6" class="bloom" />
+          <img src="assets/images/photo7.jpg" alt="Memory 7" class="bloom" />
+        </div>
+      </div>
+      <button onclick="nextPage()">Next</button>
+    </section>
+
+    <!-- Page 3: Typing Message -->
+    <section class="page" id="message">
+      <h2>A Special Message</h2>
+      <p id="typedMessage"></p>
+      <button onclick="nextPage()">Final Surprise</button>
+    </section>
+
+    <!-- Page 4: Final Surprise -->
+<section class="page" id="final">
+  <h2>Make a Wish!</h2>
+  <div class="cake">
+    <div class="cake-layer layer1"></div>
+    <div class="cake-layer layer2"></div>
+    <div class="cake-layer layer3"></div>
+    <div class="candle">
+      <div class="flame"></div>
+    </div>
+  </div>
+  
+  <!-- Balloons added here -->
+  <div class="balloons"></div>
+
+  <p class="credit">Made with love by [DEVA]</p>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
